@@ -10,29 +10,29 @@ XPTinclude
       \ _common/common
 
 XPT model " model ... equation ... end ... ;
-model `modelname^`docstring...{{^ "`description^"`}}^
+model `modelname^ "`docstring...^"
     `cursor^
 equation
 end `modelname^;
 
 XPT class " class ... equation ... end ... ;
-class `classname^`docstring...{{^ "`description^"`}}^
+class `classname^ "`docstring...^"
     `cursor^
 equation
 end `classname^;
 
 XPT connector " connector ... end ... ;
-connector `connectorname^`docstring...{{^ "`description^"`}}^
+connector `connectorname^ "`docstring...^"
     `cursor^
 end `connectorname^;
 
 XPT record " record ... end ... ;
-record `recordname^`docstring...{{^ "`description^"`}}^
+record `recordname^ "`docstring...^"
     `cursor^
 end `recordname^;
 
 XPT typer " type ... = Real (unit=...)
-type `typename^ = Real(`quantity...{{^quantity="`quantity^", `}}^unit="`unit^")
+type `typename^ = Real(quantity="`quantity...^", unit="`unit...^")
 
 XPT while " while ... then ... end while;
 while `cond^ loop
@@ -66,4 +66,5 @@ XPT function " function ... algorithm ... end ... ;
 function `functionName^
 algorithm
 end `functionName^;
+
 
